@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <script>
+         function newLocation() {
+            window.location = "http://www.xyz.com";
+         }
+      </script>
+   </head>
+
+   <body>
+      <input type = "button" value = "Go to new location" onclick = "newLocation()">
+   </body>
+</html>
+
+/*
+window.location.replace("http://www.abc.com
+
+window.location.assign("http://www.abc.org");
+
+--> assign() vs. replace()
+
+The difference between assign() and replace() method is that
+the location.replace() method deletes the current URL from the document history,
+so it is unable to navigate back to the original document.
+You can't use the browsers "Back" button in this case.
+If you want to avoid this situation, you should use location.assign() method,
+because it loads a new Document in the browser.
+*/
+
+
+/*
+location.reload()
+
+The location.reload() method reloads the current document in the browser window.
+
+Following is the syntax for the same.
+
+window.location.reload("http://www.yahoo.com");
+*/
+
+/*
+  Redirection and Search Engine Optimization
+
+  If you want to notify the search engines (SEO) about your URL forwarding,
+  you should add the rel = "canonical" meta tag to your website head part
+  because search engines don't analyze JavaScript to check the redirection.
+
+  Following is the syntax for the same.
+
+  <link rel = "canonical" href = "http://abc.com/" />
+*/

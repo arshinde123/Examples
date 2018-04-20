@@ -1,0 +1,4 @@
+- A mutable object is an object whose state can be modified after it is created.
+- An immutable object is an object whose state cannot be modified after it is created.
+- Examples of native JavaScript values that are immutable are numbers and strings.
+//=================================================================//
